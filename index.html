@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>Bootstrap Cheatsheet</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+        Bootstrap
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- Jumbotron  -->
+    <div class="jumbotron">
+      <h1 class="display-4">Hello, world!</h1>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <hr class="my-4">
+      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </p>
+    </div>
+
+
+    <!-- Typography --> 
+    <div class="container">
+      <h1 class="pb-2 mt-4 mb-2 border-bottom">Bootstrap Cheatsheet</h1>
+      <p class="lead">
+        Typography
+      </p>
+      <p>
+        <mark>Lorem ipsum dolor sit amet</mark> consectetur adipisicing elit.
+        Facilis eligendi ea quae excepturi nam
+        <del>quisquam quo beatae</del> nobis quaerat, nostrum, neque ratione
+        modi vel aut amet ab harum ipsa possimus.
+      </p>
+      <p>
+        <u>Lorem ipsum dolor sit amet</u> consectetur adipisicing elit. Vero rem
+        asperiores, harum officiis maxime, blanditiis earum facere laborum
+        adipisci, delectus voluptates sequi at suscipit nobis dolorem id ut
+        quidem ipsum.
+      </p>
+
+      <hr />
+      <!-- Alignment -->
+      
+      <p class="text-left text-lowercase">Left Aligned Text</p>
+      <p class="text-center text-uppercase">Center Aligned Text</p>
+      <p class="text-right text-capitalize">Right Aligned Text</p>
+      <p class="text-justify">Justified</p>
+      <p class="text-nowrap">No Wrap</p>
+
+      <hr>
+
+      <!-- Quick Floats -->
+
+      <div class="float-right">Div floated to right</div>
+      <div class="float-left">Div floated to left</div>
+      
+      <!-- Clearfix is used to clear the floating-->
+      <div class="clearfix"></div>
+      <hr>
+
+      <!-- Block Quotes - Doesn't work in same Bootstrap 4 but google has good options -->
+      <blockquote class="blockquote text-center text-success">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In asperiores autem, neque voluptatem 
+        placeat veritatis consequatur alias sed, laboriosam dignissimos dicta illo error iste minus 
+        reiciendis magnam. Ab, molestiae architecto.</p>
+        <footer class="blockquote-footer">John Doe, <cite title="The Greek Way">The Greek Way</cite></footer>
+      </blockquote>
+
+      <!-- Lists -->
+      <ul class="list-unstyled">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ul>
+      
+      <ul class="list-inline">
+        <li class="list-inline-item">Item 1</li>
+        <li class="list-inline-item">Item 2</li>
+        <li class="list-inline-item">Item 3</li>
+        <li class="list-inline-item">Item 4</li>
+      </ul>
+
+
+      <!-- Code -->
+      <p>change directory with <kbd>cd</kbd></p>
+      <hr>
+
+      <!-- Contextual Colors -->
+      <p class="text-primary">Hello World</p>
+      <p class="text-success">Hello World</p>
+      <p class="text-info">Hello World</p>
+      <p class="text-warning">Hello World</p>
+      <p class="text-danger">Hello World</p>
+      <p class="text-muted">Hello World</p>
+
+      <!-- Contextual Backgrounds -->
+      <p class="bg-primary">Hello World</p>
+      <p class="bg-success">Hello World</p>
+      <p class="bg-info">Hello World</p>
+      <p class="bg-warning">Hello World</p>
+      <p class="bg-danger">Hello World</p>
+      <p class="bg-secondary">Hello World</p>
+      <hr>
+    </div>
+
+    <!-- Buttons -->
+    <div class="container">
+      <button class="btn btn-primary">Default</button>
+      <button type="button" class="btn btn-link">Link</button>
+      <input type="submit" class="btn btn-light"value="Submit">
+
+      <!-- Contextual Buttons -->
+
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-danger">Danger</button>
+      <button class="btn btn-warning">Warning</button>
+      <button class="btn btn-info">Info</button>
+      <button class="btn btn-light">Light</button>
+      <button class="btn btn-dark">Dark</button>
+      <hr>
+
+      <!-- Button Sizes and Outline Buttons-->
+      <button class="btn btn-primary btn-lg">Large</button>
+      <button class="btn btn-primary btn-sm">Small</button>
+      <button class="btn btn-outline-primary">Outline Primary</button>
+      <button class="btn btn-outline-secondary">Outline Secondary</button>
+      <button class="btn btn-outline-primary" disabled="disabled">Disabled Primary</button>
+
+
+      <hr>
+
+      <!-- Block Level Buttons-->
+      <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+      <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+
+   
+
+    </div>
+    <hr>
+
+    <!-- Forms -->
+    <div class="container">
+      <form>
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" placeholder="Add Name" class="form-control">
+        </div>
+        
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="Add Email Address" class="form-control">
+        </div>
+        
+        <div class="form-group">
+          <label>Message</label>
+          <textarea class="form-control" placeholder="Add Message"></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label>Gender</label>
+          <select class="form-control">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label>Upload File</label>
+          <br>
+          <input type="file">
+          <p class="form-text text-muted">Only JPEG and PNG Files</p>
+        </div>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Check Me Out
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-outline-secondary">Submit</button>
+      </form>
+
+      <hr>
+<!-- Inline Form-->
+      <form class="form-inline">
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" class="form-control ml-3 mr-3" placeholder="Email">
+        </div>
+
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" class="form-control ml-3 mr-3" placeholder="Password">
+        </div>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Remember Me
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary ml-3">Login</button>
+      </form>
+  </div>
+<hr>
+
+<!-- Tables -->
+    <div class="container">
+      <table class="table table-striped table-bordered table-hover table-sm">
+        <tr class="thead-light">
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr class="table-danger">
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>24</td>
+        </tr>
+        <tr class="">
+          <td>John</td>
+          <td>Doe</td>
+          <td>34</td>
+        </tr>
+        <tr>
+          <td>Stephanie</td>
+          <td>Landon</td>
+          <td>47</td>
+        </tr>
+        <tr>
+          <td>Mike</td>
+          <td>Johnson</td>
+          <td>19</td>
+        </tr>
+      </table>
+      <hr>
+
+      <table class="table table-dark">
+      <tr class="thead-dark">
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr class="">
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>24</td>
+      </tr>
+      <tr class="">
+        <td>John</td>
+        <td>Doe</td>
+        <td>34</td>
+      </tr>
+      <tr>
+        <td>Stephanie</td>
+        <td>Landon</td>
+        <td>47</td>
+      </tr>
+      <tr>
+        <td>Mike</td>
+        <td>Johnson</td>
+        <td>19</td>
+      </tr>
+    </table>
+    </div>
+    <hr>
+
+    <div class="container">
+      
+      <ul class="list-group">
+        <li class="list-group-item">Item One</li>
+        <li class="list-group-item">Item Two</li>
+        <li class="list-group-item">Item Three</li>
+        <li class="list-group-item">Item Four</li>
+      </ul>
+<br>
+      <ul class="list-group">
+        <a href="#" class="list-group-item active">Item One</li>
+        <a href="#" class="list-group-item">Item Two</li>
+        <a href="#" class="list-group-item list-group-item-success">Item Three</li>
+        <a href="#" class="list-group-item disabled">Item Four</li>
+      </ul>
+    </div>
+
+    <!-- Cards/Panels -->
+    <div class="container">
+      
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary mt-4">Go somewhere</a>
+        </div>
+      </div>
+
+<br>
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+
+      <br>
+<!-- Bootstrap 4 Equivalent to Wells -->
+      <div class="card card-body bg-light">
+        Well
+   </div>
+
+      <br>
+
+      <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Alerts -->
+    <div class="alert alert-success" role="alert">A Success</div>
+    <div class="alert alert-primary" role="alert">Primary</div>
+    <div class="alert alert-warning" role="alert">Warning</div>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <hr>
+
+    <!-- Progress Bars -->
+    <div class="progress">
+      <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:50%">
+        50%
+      </div>
+    </div>
+
+    <br>
+    <hr>
+
+    <!-- Badges -->
+    <div class="container">
+      <h4>Example heading <span class="badge badge-secondary">New</span></h4>
+    
+
+    <button type="button" class="btn btn-primary">
+      Notifications <span class="badge badge-light">4</span>
+    </button>
+  <br>
+  <span class="badge badge-primary">Primary</span>
+  <span class="badge badge-secondary">Secondary</span>
+  <span class="badge badge-success">Success</span>
+  <span class="badge badge-danger">Danger</span>
+  <span class="badge badge-warning">Warning</span>
+  <span class="badge badge-info">Info</span>
+  <span class="badge badge-light">Light</span>
+  <span class="badge badge-dark">Dark</span>
+<br>
+<br>
+<hr>
+  </div>
+
+  <!-- Grids -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sit quos veritatis laudantium</p>
+      </div>
+      <div class="col-md-4">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sit quos veritatis laudantium</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sit quos veritatis laudantium</p>
+    </div>
+    <div class="col-md-3">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sit quos veritatis laudantium</p>
+    </div>
+    <div class="col-md-3">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sit quos veritatis laudantium</p>
+    </div>
+    <div class="col-md-3">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sit quos veritatis laudantium</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <div style="height:400px"></div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
